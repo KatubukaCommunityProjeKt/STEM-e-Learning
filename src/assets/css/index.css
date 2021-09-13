@@ -1,0 +1,497 @@
+*,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, serif;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x:  hidden;
+}
+/* start of header */
+#head{
+    background: #13335b;
+    z-index: 2;
+    width: 100% !important;
+}
+.headHeadingOne{
+    color: #ffffff;
+    font-size: x-large;
+    margin-left: 10px;  
+}
+.headHeadingTwo{
+    color: #9c1f25;
+}
+#headbtnOne{
+    margin-right: 10px;
+    font-size: x-large; 
+}
+#headbtnTwo{
+    margin-right: 10px;
+    font-size: x-large; 
+}
+.navhead{
+    margin-left: 28%;
+}
+.loginbttn{
+    margin-top: 5px;
+    
+}
+.loginword{
+    font-weight: bold;
+    color: #13335b;
+}
+/* End of header */
+
+/* start of image slideshow */
+.carousel-item{
+    height: 900px;
+}
+#carouselbtn{
+    margin-top: -40px;
+}
+#buttonz{
+    width: 40px;
+}
+#pichaOne{
+    background: url(../images/img06.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.oppa{
+    width: 100%;
+    height: 1050px;
+    background-color: rgba(0, 0, 0, 0.363);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#manenoOne{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    z-index: 1;
+}
+.headings{
+    font-size:100px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#pichaTwo{
+    background: url(../images/img11.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#pichaThree{
+    background: url(../images/img10.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#pichaFour{
+    background: url(../images/img12.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* End of image slideshow */
+
+/* start of welcoming body contents */
+.Welcome{
+    background: #13335b;
+    height: 100vh;
+}
+.Welcome h2{
+    font-weight: 700;
+    font-size: 80px;
+    justify-content: center;
+    align-items: center;
+}
+.Welcome p{
+    font-weight: 400;
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+/* End of welcoming body contents */
+
+/* start of our success body contents */
+.headOne{
+    margin-top: 40px;
+}
+.headOne h2{
+    margin-left: 34%;
+    font-size: 100px;
+    color: #13335b;
+}
+#card5000{
+    width: 400px; 
+    height: 63vh;  
+    background: #eef7f3;
+} 
+#card3000{
+    width: 400px;
+    height: 63vh;
+    background: #eef7f3;
+} 
+.card-body h5{
+    font-size: 120px; 
+    margin-top: 120px; 
+    color: #13335b;
+}
+.card-footer{
+    width: 100%;
+    background: #13335b !important; 
+    height: 100px; 
+    font-size: x-large;
+}
+/* End of our success body contents */
+
+/* start of sponsors body contents */
+.headTwo{
+    margin-top: 80px;
+}
+.headTwo h2{
+    margin-left: 36%;
+    font-size: 100px;
+    color: #13335b;
+}
+.cardTwo{
+    margin-top: 75px !important; 
+} 
+#Cardses{
+    width: 400px; 
+    height: 63vh; 
+    margin-left: -260px; 
+    background: #eef7f3;
+}
+#Iconses{
+    color: #13335b; 
+    font-size: 150px;
+    /* margin-left: 110px; */
+}
+/* End of sponsors body contents */
+
+/* start of how to start body contents */
+.headThree h2{
+    margin-left: 40%;
+    margin-top: 65px;
+    font-size: 60px;
+    color: #13335b;
+}
+#Cards{
+    width: 30%; 
+    height: 63vh; 
+    background: #eef7f3;
+}
+#Icons{
+    margin-left: 29%; 
+    font-size: 150px; 
+    color: #13335b;
+}
+
+#StartIcon{
+    margin-left: 25%; 
+    font-size: 150px; 
+    color: #13335b;
+}
+/* End of how to start body contents */
+
+/* start of more from stem e-learning body contents */
+.headFour h2{
+    margin-left: 31%;
+    margin-top: 65px;
+    font-size: 47px;
+    color: #13335b;
+}
+.morestem{
+    margin-top: 170px;
+}
+.parano{
+    display: flex;
+    color: #13335b;
+}
+.two{
+    margin-left: -10px;
+}
+.Three{
+    margin-left: 10px;
+}
+#N0{
+    font-size: 100px;
+}
+.para{
+    margin-top: 20px;
+    font-size: 37px;
+}
+.take{
+    margin-left: 40px;
+}
+.simulate{
+    margin-left: 23px;
+}
+.idea_live{
+    margin-left: 23px;
+}
+#btn{
+    width: 13% !important;
+    height: 70px !important;
+    margin-left: 45% !important;
+    margin-top: 70px !important;
+    background: #f4cb27 !important;
+    font-weight: 800 !important;
+}
+/* start of more from stem e-learning body contents */ 
+
+/* start of footer */
+.conteiner{
+    background: #13335b;
+    color: #ffffff;
+    display: flex;
+    margin-top: 8%;
+    /* height: 40vh; */
+}
+footer{
+    padding: 30px;
+}
+.foot{
+    justify-content: center;
+    align-items: center;
+}
+.foothead{
+    font-size: large;
+    margin: 35px;
+    border-bottom: 2px solid #f4cb27;
+}
+.footpara{
+    margin: 35px;
+}
+.foothead1{
+    font-size: large;
+    justify-content: end;
+    border-bottom: 2px solid #f4cb27;
+}
+#footerbttn{
+    border-radius: 3px; 
+    color: #ffffff; 
+    height: 40px; 
+    border: 2px solid #fff; 
+    background: #13335b;
+}
+#footerbtnpara{ 
+    font-weight: bold;
+    margin-left: 10px;
+}
+/* End of footer */
+
+/* start of medium screen devives */
+@media screen and (max-width: 990px){
+    .carousel-item{
+        height: 690px;
+    }
+    .Welcome{
+        justify-content: center;
+        align-items: center;
+        /* height: auto; */
+    }
+    .Welcome h{
+        font-size: 70px;
+        font-weight: 630;
+        text-align: center !important;
+        margin: 20px;
+        line-height: -320px;
+    }
+    .Welcome p{
+        /* margin-left: 30px; */
+        font-size: 45px;
+        margin: 25px;
+    }
+    .Welcome p1{
+        /* margin-left: 30px; */
+        font-size: 45px;
+        margin: 25px;
+        line-height: 20px;
+    }
+    .headOne{
+        margin-left: -180px;
+    }
+    .headTwo{
+        margin-left: -130px;
+    }
+    .headThree{
+        margin-left: -120px;
+    }
+    .headFour{
+        margin-left: -210px;
+    }
+    #card5000{
+        width: 350px;
+    }
+    #card3000{
+        width: 350px;
+    }
+    #Cardses{
+        width: 350px;
+    }
+    #Cards{
+        width: 270px;
+    }
+    #Icons{
+        margin-left: 20%;
+    } 
+    .morestem{
+        margin-top: 40px;
+        justify-content: center;
+        text-align: center;
+    }
+    .parano{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        line-height: 75px;
+    }
+    #N0{
+        font-size: 70px;
+        font-weight: 500;
+    }
+    .para{
+        font-size: x-large;
+        line-height: 30px;
+        margin-top: -10px;
+    }
+    #btn{
+        margin: -6px auto;
+        margin-left: 350px !important;
+        width: 30% !important;
+    }
+    .foot{
+        height: 55vh;
+        margin-top: 40px;
+        justify-content: center;
+        text-align: center;
+    }
+    .foothead{
+        line-height: 50px;
+        border-bottom: 2px solid #f4cb27;
+    }
+    .foothead1{
+        border-bottom: 2px solid #f4cb27;
+    }
+    #footerbttn{
+       margin-left: 150px;
+    }
+}
+/* End of medium screen devives */
+
+
+/* start of small screen devives */
+@media screen and (max-width: 34em){
+    .carousel-item{
+        height: 550px;
+    }
+    .headings{
+        font-size: 55px;
+        font-weight: 500;
+    }
+    .Welcome h{
+        font-size: 24px;
+        margin: 20px;
+    }
+    .Welcome p{
+        font-size: 23px;
+        /* margin-top: 15px; */
+    }
+    .headOne h2{
+        font-size: 45px;
+        margin-left: 45%;
+    }
+    .headTwo h2{
+        font-size: 45px;
+        margin-left: 46%;
+    }
+    #Icons{
+        margin-left: 20%;
+    }
+    .headThree h2{
+        font-size: 45px;
+        margin-left: 38%;
+    }
+    #Cards{
+        width: 350px;
+    }
+    .headFour h2{
+        font-size: 20px;
+        margin-left: 45%;
+    }
+    #N0{
+        font-size: 60px;
+        color: #13335b;
+    }
+    .para{
+        font-size: large;
+        margin-top: -12px;
+        color: #13335b;
+    }
+    #btn{
+        margin: -6px auto;
+        margin-left: 30% !important;
+        width: 45% !important;
+    }
+    .foot{
+        height: 100vh;
+        justify-content: center;
+        text-align: center;
+    }
+    .inputsbttn{
+        margin-left: -145px;
+    }
+    #footerbtnpara{
+        width: 120px;
+    }
+}
+/* End of small screen devives */
+
+/* start of ombeni's screen devives */
+@media screen and (max-width: 280px){
+    .Welcome h{
+        font-size: 21px;
+    }
+    .Welcome p{
+        font-size: 15px;
+    }
+    .Welcome p1{
+        font-size: 15px;
+    }
+    .card-body h5{
+        font-size: 80px;
+    }
+    .headThree h2{
+        font-size: 35px;
+    }
+    .headFour h2{
+        font-size: 18px;
+    }
+    #footerbttn{
+        width: 30%;
+    }
+    #footerbtnpara{
+        width: 30%;
+    }
+}
+/* End of smaller screen devives */
+
+    
+@media screen and (max-width: 410px){
+    .headings{
+        font-size: 45px;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .Welcome h2{
+        font-size: 26px;   
+    }
+    
+}

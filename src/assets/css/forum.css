@@ -1,0 +1,129 @@
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+.contain>.container>.chat-box{
+  background: #ffffff !important;
+}
+
+.chat-box{
+  height: 400px;
+  overflow-y: auto;
+  background: #ffffff;
+  padding: 10px 30px 20px 30px;
+  /* box-shadow: inset 0 32px 32px -32px rgb(255 0 0 /5%),inset 0 -32px 32px -32px rgb(0 255 0 /5%); */
+  scrollbar-width: none;  /*hidding scroll bar on firefox*/
+  -ms-overflow-style: none;/*hidding scroll bar on internet explorer*/
+}
+.chat-box::-webkit-scrollbar{
+  width: 0;
+}
+
+.chat-box .chat {
+  margin: 15px 0;
+}
+.chat-box .chat p{
+  padding: 8px 16px;
+}
+.chat-box .outgoing{
+  border-radius: 70px 70px 0 70px;
+  background:#f2f2f2;
+}
+
+.outgoing {
+  margin-left: auto !important;
+  max-width: 80% ;
+  color: #13335b;
+ }
+.outgoing .datails p{
+  
+  color: #13335b;
+}
+
+.incoming-chat{
+  margin-right: auto !important;
+  max-width: 80% ;
+}
+
+.chat-box .incoming{
+  border-radius: 70px 70px 70px 0;
+  margin-right: auto;
+  background: rgb(242,242, 242, 0.45);
+}
+
+.chat-box .incoming>.userprofile>img{
+  width: 35px;
+  height: 35px;
+}
+.incoming .datails{
+  margin-left: 15px;
+  color: #13335b !important;
+}
+.incoming .datails p{
+  color: #13335b !important;
+}
+.reactions{
+  width:8%;
+}
+.userprofile>img{
+  height:35px;
+  width:35px;
+}
+
+.useranswer .datails p{
+  width:100%;
+  color: #13335b;
+  background:#f2f2f2 !important;
+  border-radius:20px !important;
+}
+.reactions .bi-caret-up-fill,.reactions .bi-caret-down-fill{
+  font-size:40px;
+  font-weight:bold;
+}
+
+.tyipng-area{
+  padding: 18px 30px;
+  display: flex; 
+  /* justify-content: space-between;  */
+}
+.tyipng-area textarea{
+ height: 45px;
+ width: calc(100% - 58px); 
+ width:100% ;
+ font-size: 17px;
+ border: 1px solid #ccc;
+ padding: 0 13px;
+ padding-right:40px;
+ border-radius: 5px 0 0 5px;
+ outline: none;
+ resize: none;
+ overflow-y: hidden;
+}
+
+.tyipng-area button{
+  width: 55px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+.tyipng-area button i{
+  font-size:24px
+}
+.bi-paperclip{
+  color:#13335b;
+  margin-left:-30px !important;
+  font-size:28px;
+  cursor: pointer;
+}
+.reply .btn{
+  color:#9c1f25;
+}
