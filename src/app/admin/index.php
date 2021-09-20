@@ -100,7 +100,7 @@
                     <div class="accordion-body mb-0 ">
                         <a href="" class=" nav-link flex-row d-flex  "style="">
                             
-                            <span class="d-flex flex-row pe-2"> <i class="bi bi-eye-fill"></i>&nbsp;<span>Technology</span></span>
+                            <span class="d-flex flex-row pe-2"> <i class="bi bi-eye-fill"></i>&nbsp;<span>view</span></span>
                         </a>
 
                     </div>
@@ -113,17 +113,15 @@
         </a>
        
         <a href="../../Forum" class="nav nav-link d-flex flex-row">
-            <i class="bi bi-clock-history"></i>
-            <!-- <i class="material-icons">forum</i> -->
-            
+            <i class="bi bi-clock-history"></i>            
             <span>  &nbsp; History</span>
         </a>
         <a href="#" class="nav nav-link">
-            <i class="bi bi-envelope-fill"></i><span>  &nbsp; Public Message</span>
+            <span class="d-flex flex-row"><i class="bi bi-envelope-fill"></i><span>Public Message</span></span>
         </a>
-        <a href="#" class="nav nav-link justify-content-lg-end align-items-center">
+        <!-- <a href="#" class="nav nav-link justify-content-lg-end align-items-center">
             <i class="bi bi-person-circle"></i><span> &nbsp; Account</span>
-        </a>
+        </a> -->
 
     </div>
 
