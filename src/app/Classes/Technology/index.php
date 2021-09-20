@@ -219,7 +219,7 @@ include_once "../../../assets/PHP/header.php";
                                 <td>Experiment</td>
                                 <td>12:00</td>
                                 <td>Easy</td>
-                                <td>Physics</td>
+                                <td>Web Technology</td>
                                 <td>view</td>
                                 <td>0</td>
                                 </tr>
@@ -228,7 +228,7 @@ include_once "../../../assets/PHP/header.php";
                                 <td>Project</td>
                                 <td>19:00</td>
                                 <td>medium</td>
-                                <td>chemistry</td>
+                                <td>Robotics</td>
                                 <td>view</td>
                                 <td>0</td>
                                 </tr>
@@ -237,7 +237,7 @@ include_once "../../../assets/PHP/header.php";
                                 <td>Challange</td>
                                 <td>14:00</td>
                                 <td>hard</td>
-                                <td>chemistry</td>
+                                <td>Robotics</td>
                                 <td>view</td>
                                 <td>0</td>
                                 </tr>
@@ -246,7 +246,7 @@ include_once "../../../assets/PHP/header.php";
                                 <td>Experiment</td>
                                 <td>08:56</td>
                                 <td>easy</td>
-                                <td>Physics</td>
+                                <td>Web Technology</td>
                                 <td>view</td>
                                 <td>0</td>
                                 </tr>
@@ -255,7 +255,7 @@ include_once "../../../assets/PHP/header.php";
                                 <td>Challange</td>
                                 <td>15:30</td>
                                 <td>Complex</td>
-                                <td>Physics</td>
+                                <td>Web Technology</td>
                                 <td>view</td>
                                 <td>0</td>
                                 </tr>
@@ -264,7 +264,7 @@ include_once "../../../assets/PHP/header.php";
                                 <td>Experiment</td>
                                 <td>20:00</td>
                                 <td>hard</td>
-                                <td>chemistry</td>
+                                <td>Robotics</td>
                                 <td>view</td>
                                 <td>0</td>
                                 </tr>
@@ -273,7 +273,7 @@ include_once "../../../assets/PHP/header.php";
                                 <td>Project</td>
                                 <td>23:00</td>
                                 <td>medium</td>
-                                <td>chemistry</td>
+                                <td>Robotics</td>
                                 <td>view</td>
                                 <td>0</td>
                                 </tr>
@@ -282,7 +282,7 @@ include_once "../../../assets/PHP/header.php";
                                 <td>Challange</td>
                                 <td>06:39</td>
                                 <td>easy</td>
-                                <td>Physics</td>
+                                <td>Web Technology</td>
                                 <td>view</td>
                                 <td>0</td>
                                 </tr>
@@ -291,7 +291,7 @@ include_once "../../../assets/PHP/header.php";
                                 <td>Experiment</td>
                                 <td>11:59</td>
                                 <td>complex</td>
-                                <td>chemistry</td>
+                                <td>Robotics</td>
                                 <td>view</td>
                                 <td>0</td>
                                 </tr>
@@ -300,7 +300,7 @@ include_once "../../../assets/PHP/header.php";
                                 <td>Challange</td>
                                 <td>06:59</td>
                                 <td>hard</td>
-                                <td>Physics</td>
+                                <td>Web Technology</td>
                                 <td>view</td>
                                 <td>0</td>
                                 </tr>
