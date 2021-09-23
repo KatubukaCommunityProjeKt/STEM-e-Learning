@@ -6,10 +6,10 @@
 
     <!-- dashboard -->
     <!-- bootstrap css 5 -->
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/bootstrap-5.0.2-dist/icons/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../../assets/css/dashboard.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap-5.0.2-dist/icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../assets/css/footer.css">
       <!-- Custom styles for this template -->
       <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
 

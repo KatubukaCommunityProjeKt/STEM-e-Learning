@@ -53,6 +53,7 @@
 
   <script src="../../assets/css/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
   <script src="../../../assets/css/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+  <script src="../../../../assets/css/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
 
   
 </boody>

@@ -12,9 +12,7 @@ include_once "../../../../assets/PHP/header.php";
     .table-responsive>.table{
         color:#13335b;
     }
-    #searchbar{
-        margin-left: 90px !important;
-    }
+
     #search{
         width: 50%;
         border: 1px solid #13335b;
@@ -29,16 +27,72 @@ include_once "../../../../assets/PHP/header.php";
         color: #13335b;
     }
     .studentAdd{
-        margin-left: -3px !important;
+        margin-left: -3px !important;  
+    }
+    .studentAdd>button{
+        color:#13335b !important;
     }
     #iconbttn{
         background: #f2f2f2;
         border: 1px solid #f2f2f2;
         outline: none !important;
     }
-    .pagenationfull{
-        margin-left: 953px;
+ 
+    a{
+        text-decoration:none
     }
+
+   .pagenationfull>nav>ul>li>a{
+        text-decoration:none;
+        color:#13335b;
+    }
+    .pagenationfull>nav>ul>.active>a{
+        background:#13335b !important;
+        border:none;
+    }
+    .pagenationfull>nav>ul>li>a:hover{
+        color:#13335b;
+    }
+    .auto-nav>span>a{
+        color:#13335b;
+    }
+
+    
+    form{
+        overflow-y: auto;
+    }
+ 
+    .modal-content,.modal-content span{
+        background:rgb(19, 51, 91,0.9) !important;
+    }
+    .modal-content input{
+        background:rgb(19,20, 90,0.3) !important;
+        color: #fff;
+        border:none;
+    }
+    
+    .modal-content select{
+        background:rgb(19,20, 90,0.3) !important;
+        color: #ccc;
+        border:none;
+    }
+    .modal-content span{
+        box-shadow: none;
+        border:none;
+        color:#ccc111;
+    }
+    .modal-content select:active{
+        color: #fff;
+        border:1px solid rgb(19,25,91,0.6);
+        box-shadow: none;
+    }
+    .modal-content input:focus{
+        color: #fff;
+        border:1px solid rgb(19,25,91,0.6);
+        box-shadow: none;
+    }
+
+
 </style>
 <body>
     <nav class="header navbar fixed-top navbar-expand-sm navbar-light mb-3 flex-row d-flex">
@@ -89,7 +143,6 @@ include_once "../../../../assets/PHP/header.php";
         </div>
     </div>
 
-
     <!-- container with sidebar and maincontainer -->
 <div class="flex-container">
 
@@ -103,48 +156,59 @@ include_once "../../../../assets/PHP/header.php";
         <div class="accordion accordion-flush" id="accordionFlush nav nav-link">
             <a class="accordion-item">
                 <a class="accordion-header " id="accordion-headingOne">
-                    <a href="" class="nav nav-link  collapsed active" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false">
+                    <a href="" class="nav nav-link  collapsed active" data-bs-toggle="collapse" data-bs-target="#users-collapse" aria-expanded="false">
                          <i class="bi-people-fill"></i>
                        <span>  &nbsp; Users</span>
+                       <i class="bi bi-caret-down-fill" id="dropclass"></i>
+                    </a>
+                </a>
+
+                <div id="users-collapse" class="accordion-collapse collapse" aria-labelledby="flushheadingOne" data-bs-parent="#accordionFlush">
+                   
+                <div class="accordion-body mb-0 ">
+                        <a href="./../students/" class=" nav-link flex-row d-flex  "style="">
+                            <span class="d-flex flex-row pe-2"> <i class="bi bi-book-half"></i>&nbsp;<span>Students</span></span>
+                        </a>
+                        <a href="./" class=" nav-link flex-row d-flex active"style="">
+                            <span class="d-flex flex-row pe-2"> <i class="bi bi-pen-fill"></i>&nbsp;<span>Teachers</span></span>
+                        </a>
+
+                        <a href="./../instructors" class=" nav-link flex-row d-flex "style="">
+                            <span class="d-flex flex-row pe-2"> <i class="bi bi-person-check-fill"></i>&nbsp;<span>Instructors</span></span>
+                        </a>
+
+
+                    </div>
+
+                </div>
+            </a>
+
+        </div>
+       
+        <div class="accordion accordion-flush" id="accordionFlush nav nav-link">
+            <a class="accordion-item">
+                <a class="accordion-header " id="accordion-headingOne">
+                    <a href="" class="nav nav-link  collapsed " data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false">
+                         <i class="bi-house-door-fill"></i>
+                       <span> Department</span>
                        <i class="bi bi-caret-down-fill" id="dropclass"></i>
                     </a>
                     
                 </a>
                 <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flushheadingOne" data-bs-parent="#accordionFlush">
-                    <div class="accordion-body mb-0">     
-                    <ul class="ulist" id="ulisOne">
-                        <li class="ulist">
-                            <a href="../students" class="nav nav-link flex-row d-flex"style="margin-left:-18px;">
-                                <i class="bi bi-binoculars-fill"></i>
-                                <span>&nbsp;Students</span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="nav nav-link active" id="tech" style="margin-left:-18px;">
-                                <i class="bi bi-people-fill" ></i>
-                                <span>&nbsp;Teachers</span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="../instructors" class="nav nav-link" id="tech" style="margin-left:-18px;">
-                                <i class="bi bi-person-plus-fill" ></i>
-                                <span>&nbsp;Instructors</span>
-                            </a>
-                        </li>
-                        </li>
-                    </ul>
+                    <div class="accordion-body mb-0 ">
+                        <a href="" class=" nav-link flex-row d-flex  "style="">
+                            
+                            <span class="d-flex flex-row pe-2"> <i class="bi bi-eye-fill"></i>&nbsp;<span>view</span></span>
+                        </a>
 
                     </div>
                 </div>
             </a>
 
         </div>
-        <a href="#" class="nav nav-link">
-            <i class="bi bi-house-door-fill"></i><span>  &nbsp; Department</span>
-        </a>
-       
+
+
         <a href="../../Forum" class="nav nav-link d-flex flex-row">
             <i class="bi bi-tree-fill"></i>
             <!-- <i class="material-icons">forum</i> -->
@@ -165,8 +229,8 @@ include_once "../../../../assets/PHP/header.php";
     <!-- main container -->
     <div class="contain">
             
-        <div class="mt-3 mb-3 border-bottom my-12" style="overflow-y:hidden;">
-            <span class="card-title" style="padding:30px;">Users > Teachers</span>
+        <div class="mt-3 mb-3 border-bottom my-12 auto-nav" style="overflow-y:hidden;">
+            <span class="card-title" style="padding:30px;"><a href="../../" style="text-decoration:none">Admin</a> > <a href=""> Users > Teachers</a></span>
         </div>
     
         <div class="container ">
@@ -175,18 +239,112 @@ include_once "../../../../assets/PHP/header.php";
       
                 <!-- add student -->
                 <div class="text-end mx-5 flex-row d-flex flex-end justify-content-end align-item-center studentAdd">
-                    <button type="menu" class="btn btn-default" id="iconbttn"> <i class="bi bi-plus-circle-fill"></i> Add Student</button>
+                    <button type="menu" class="btn btn-default" id="iconbttn" data-bs-toggle="modal" data-bs-target="#addTeacher-btn"> <i class="bi bi-plus-circle-fill"></i> Add Teacher</button>
                 </div>
 
                 <div class="d-flex flex-row p-3">
                     <div>
                         <a href="#"><i class="bi bi-box-arrow-in-down downicon"></i><span class="mx-1 text-decoration-none">Download</span></a>    
                     </div>
-                    <div class="flex-row d-flex flex-end justify-content-end align-item-center mx-5 me-0" id="searchbar">
-                        <input type="text" name="" id="search" placeholder="search">
+                  
+                    <div class="flex-row d-flex flex-end justify-content-end align-item-center ms-5 me-0 " id="searchbar">
+                        <input type="text" name="" id="search" placeholder="search" class="border">
                         <i class="bi bi-search" id="search_icon"></i>
                     </div>
                 </div>
+
+                 <!-- modal form -->
+                 <div class="modal fade " id="addTeacher-btn" tabindex="-1" aria-labelledby="studentAdds" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable ">
+                        <div class="modal-content">
+                            <div class="modal-header text-center border-bottom-0">
+                                <h5 class="modal-title text-white" style="margin:1px auto;" id="studentAdd-title">Add Teacher's Details</h5>
+                                <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                           <form action="">
+                           <div class="modal-body">
+                               <div class="input-group d-flex flex-row">
+                                    <span class="input-group-text rounded-0">
+                                        <i class="bi bi-person-circle" ></i>
+                                    </span>
+                                    <input type="text" placeholder="Full Name" class="form-control">
+                               </div>
+                        
+                               <div class="input-group d-flex flex-row justify-content-between p-2 text-white">
+                                    <label for="gender">Gender</label>
+                                    
+                                    <div class="flex-row d-flex float-start justify-content-between align-items-center">
+                                        <input type="radio" name="gender" value="Male" id="male">
+                                        <label for="male">Male</label>
+                                    </div>
+                                    <div class="flex-row d-flex  float-end" >
+                                        <input type="radio" name="gender" value="Female" id="female">
+                                        <label for="female">Female</label>
+                                    </div>
+                               </div>
+
+                                <div class="input-group d-flex flex-row py-2" title="Parent's or Guardian's phone number">
+                                    <span class="input-group-text rounded-0">
+                                        <i class="bi bi-telephone-fill"></i>
+                                    </span>    
+                                    <input class="form-control" type="tel" name="fullname" placeholder="0620000001" id="phone" /> 
+                               </div>
+                               <div class="input-group d-flex flex-row py-2" title="Parent's or Guardian's Email">
+                                    <span class="input-group-text rounded-0"><i class="bi-envelope-fill"></i></span>
+                                    <input class="form-control" type="text" name="email" placeholder="Parent's or Guardian's Email" /> 
+                               </div>
+                               <div class="input-group d-flex flex-row py-2" title="Region">
+                                    <span class="input-group-text rounded-0">
+                                        <i class="bi-geo-alt-fill"></i>
+                                    </span>
+                                    <select name="state" id="Region" size="1" class="form-styling form-select">
+                                        <option value="" class="text-white" selected="true" disabled >Select Region</option>
+                                    </select>
+                               </div>
+
+                               <div class="input-group d-flex flex-row py-2" title="District">
+                                    <span class="input-group-text rounded-0">
+                                        <i class="bi-geo-fill" ></i>
+                                    </span>
+                                    <select name="district" id="District" size="1" class="form-styling form-select">
+                                        <option value="" class="input" selected="selected" selected disabled>Select District</option>
+                                    </select>
+                               </div>
+
+                               <div class="input-group d-flex flex-row py-2">
+                                    <span class="input-group-text rounded-0">
+                                        <i class="bi-envelope-open-fill"></i>
+                                    </span> 
+                                    <input class="form-control" type="text" name="pobox" placeholder="P. O. BOX 1234 Dar es salaam" id="pobox" />
+                               </div>
+                               <div class="input-group d-flex flex-row py-2">
+                                    <span class="input-group-text rounded-0">
+                                        <i class="bi bi-lock-fill"></i>
+                                    </span>
+                                    <input class="form-control" type="text" name="password" placeholder="password" /> 
+                               </div>
+                               <div class="input-group d-flex flex-row py-2">
+                                    <span class="input-group-text rounded-0">
+                                        <i class="bi bi-lock-fill"></i>
+                                    </span>
+                                    <input class="form-control" type="text" name="Confirm password" placeholder="confirm password" /> 
+                               </div>
+
+                            </div> 
+                            
+                            <div class="modal-footer border-top-0">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-warning text-primary">Save Details</button>
+                            </div>
+                            
+                           </form>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
 
                 <div class="table-responsive">
                     <table class="table table-striped table-sm table-bordered text-capitalize ">
@@ -419,10 +577,10 @@ include_once "../../../../assets/PHP/header.php";
                             </tbody>
                     </table>
 
-                    <div class="text-end">
-                        <button class="btn btn-default text-white" style="background: #13335b">Save</button>
+                    <div class="d-flex align-items-end justify-content-end ">
+                        <button class="btn btn-default text-white border-0" style="background: #13335b; outline:none">Save</button>
                     </div>
-                    <div class="pagenationfull p-2">
+                    <div class="pagenationfull p-2 d-flex justify-content-end">
                         <nav aria-label="Page navigation example">
                             <ul class="pagination">
                                     
@@ -433,7 +591,7 @@ include_once "../../../../assets/PHP/header.php";
                                     </a>
                                 </li>
 
-                                <li class="page-item active"><a class="page-link" style="background: #13335b" href="#">1</a></li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
                                 <li class="page-item"><a class="page-link" href="#">2</a></li>
                                 <li class="page-item"><a class="page-link" href="#">3</a></li>
                                 <li class="page-item"><a class="page-link" href="#">4</a></li>
@@ -457,9 +615,17 @@ include_once "../../../../assets/PHP/header.php";
 </div>
 
 
-    <?php
-        include_once "../../../../assets/PHP/footer.php";
-    ?>
-</body>
+
+<footer class="container-fluid relative-bottom footer text-center">
+    <p class="text-center medium text-white alert-dismissible ">&copy;CapitalSpace2021</p>
+    <p class="text-center medium text-white alert-dismissible text-large">V 1.0</p>
+</footer>
+
+<script src="./../../../../assets/css/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+<script src="./../../../../assets/js/region&districtTz.js"></script>
+<!-- <script src="../../assets/js/Chart.js"></script>
+<script src="../../assets/js/adminChart.js"></script>
+</body> -->
+</html>
 
 

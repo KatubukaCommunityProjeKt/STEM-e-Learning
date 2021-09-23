@@ -1,5 +1,5 @@
-var starts=[135850,52122,148825,16939,9763];
-var frameworks=['React','Angular','Vue','Hyperapp','Omi'];
+var starts=[(135850),52122,148825,16939,9763,91934,12137];
+var frameworks=['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
 var techn=['Experiments','challanges','Projects'];
 var techdata=[12,31,3];
 
@@ -15,48 +15,25 @@ var mychart=new Chart(ctx,{
     data:{
         labels:frameworks,
         datasets:[{
-            label:'Github Starts',
+            label:'Total subscribers per day',
             data: starts,
             backgroundColor:[
                 'rgba(255,99,132,0.2)',
                 'rgba(54,162,235,0.2)',
                 'rgba(255,206,86,0.2)',
                 'rgba(75,192,192,0.2)',
-                'rgba(153,102,255,0.2)'
+                'rgba(153,102,255,0.2)',
+                'rgba(13,55,255,0.2)',
+                'rgba(245,12,255,0.2)'
             ],
             borderColor:[
                 'rgba(255,99,132,1)',
                 'rgba(54,162,235,1)',
                 'rgba(255,206,86,1)',
                 'rgba(75,192,192,1)',
-                'rgba(153,102,255,1)'
-            ],
-            borderWidth:1,
-            body:'rgba(255,79,132,1)'
-        }]
-    }
-});
-
-var mypie=new Chart(pies,{
-    type:'pie',
-    data:{
-        labels:frameworks,
-        datasets:[{
-            label:'pie data',
-            data: starts,
-            backgroundColor:[
-                'rgba(255,99,132,0.2)',
-                'rgba(54,162,235,0.2)',
-                'rgba(255,206,86,0.2)',
-                'rgba(75,192,192,0.2)',
-                'rgba(153,102,255,0.2)'
-            ],
-            borderColor:[
-                'rgba(255,99,132,1)',
-                'rgba(54,162,235,1)',
-                'rgba(255,206,86,1)',
-                'rgba(75,192,192,1)',
-                'rgba(153,102,255,1)'
+                'rgba(153,102,255,1)',
+                'rgba(13,55,255,1)',
+                'rgba(245,12,255,1)'
             ],
             borderWidth:1,
             body:'rgba(255,79,132,1)'
@@ -66,28 +43,69 @@ var mypie=new Chart(pies,{
         responsive:true,
         title:{
             display:true,
-            text:'Weekly Analysis'
+            text:'Weekly Subscribes Analysis'
+        },
+        tooltips:{
+            mode:'label'
+        },
+        hover:{
+            mode: 'nearest',
+            intersect:true,
+        },
+        scales:{
+            xAxes:[{
+                display: true,
+                ticks:{
+                    userCallback:function (label,index,labels) {
+                        if (typeof label==='string'){
+                            return label.substring(0,8)
+                        }
+                        return label
+                    },
+                },
+                scaleLabel:{
+                    display:true,
+                    labelString: 'Days'
+                }
+            }],
+            yAxes:[{
+                display:true,
+                scaleLabel: {
+                    display:true,
+                    labelString: 'Subscribes'
+                }
+            }]
         }
     }
 });
 
+
 var line= new Chart(lines,{
     type:'line',
     data:{
-        labels:frameworks,
+        labels:['January','February','March','April','May','June','July','August','September','October','November','December'],
         datasets:[{
             label:'Line graph',
-            data:starts,
+            data:[100,43,54,120,90,139,68,100,143,10,75,98],
+            label:'This month',
             backgroundColor:'rgba(255,99,132,0.2)',
             borderColor:'rgba(255,99,132,1)',
             borderWidth:1
-        }]
+         },{
+            data: [70,90,44,6,83,90,10,1,6,40,12,90],
+            label: 'Last Month',
+            backgroundColor: 'rgb(60,186,159,0.2)',
+            borderColor: 'rgb(60,189,159,1)',
+            borderWidth: 1
+        }
+        ]
+        
     },
     options:{
         responsive:true,
         title:{
             display:true,
-            text:'Daily Activity Analysis'
+            text:'Annual Activity Analysis'
         },
         tooltips:{
             mode:'label'
@@ -109,14 +127,14 @@ var line= new Chart(lines,{
                 },
                 scaleLabel:{
                     display:true,
-                    labelString: 'Activity Name'
+                    labelString: 'Month(s)'
                 }
             }],
             yAxes:[{
                 display:true,
                 scaleLabel: {
                     display:true,
-                    labelString: 'Total'
+                    labelString: 'Total Activity'
                 }
             }]
         }
