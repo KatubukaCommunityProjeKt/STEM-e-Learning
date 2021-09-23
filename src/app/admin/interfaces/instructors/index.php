@@ -12,9 +12,7 @@ include_once "../../../../assets/PHP/header.php";
     .table-responsive>.table{
         color:#13335b;
     }
-    #searchbar{
-        margin-left: 90px !important;
-    }
+
     #search{
         width: 50%;
         border: 1px solid #13335b;
@@ -29,15 +27,34 @@ include_once "../../../../assets/PHP/header.php";
         color: #13335b;
     }
     .studentAdd{
-        margin-left: -3px !important;
+        margin-left: -3px !important;  
+    }
+    .studentAdd>button{
+        color:#13335b !important;
     }
     #iconbttn{
         background: #f2f2f2;
         border: 1px solid #f2f2f2;
         outline: none !important;
     }
-    .pagenationfull{
-        margin-left: 953px;
+ 
+    a{
+        text-decoration:none
+    }
+
+   .pagenationfull>nav>ul>li>a{
+        text-decoration:none;
+        color:#13335b;
+    }
+    .pagenationfull>nav>ul>.active>a{
+        background:#13335b !important;
+        border:none;
+    }
+    .pagenationfull>nav>ul>li>a:hover{
+        color:#13335b;
+    }
+    .auto-nav>span>a{
+        color:#13335b;
     }
 </style>
 <body>
@@ -88,57 +105,68 @@ include_once "../../../../assets/PHP/header.php";
 <div class="flex-container">
     <!-- sidebar start -->
     <div class="sidebar" >
+<<<<<<< HEAD
         <a href="../../Dashboard" class="nav nav-link ">
+=======
+
+        <a href="../../" class="nav nav-link ">
+>>>>>>> 661badd4d3278bacbfd5abdb4eb8a67ce9204fab
             <i class="bi bi-speedometer2"></i><span>  &nbsp; Dashboard</span>
         </a>
         <div class="accordion accordion-flush" id="accordionFlush nav nav-link">
             <a class="accordion-item">
                 <a class="accordion-header " id="accordion-headingOne">
-                    <a href="" class="nav nav-link  collapsed active" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false">
+                    <a href="" class="nav nav-link  collapsed active" data-bs-toggle="collapse" data-bs-target="#users-collapse" aria-expanded="false">
                          <i class="bi-people-fill"></i>
                        <span>  &nbsp; Users</span>
                        <i class="bi bi-caret-down-fill" id="dropclass"></i>
                     </a>
 
                 </a>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flushheadingOne" data-bs-parent="#accordionFlush">
-                    <div class="accordion-body mb-0">     
-                    <ul class="ulist" id="ulisOne">
-                        <li class="ulist">
-                            <a href="../students" class="nav nav-link flex-row d-flex"style="margin-left:-18px;">
-                                <i class="bi bi-binoculars-fill"></i>
-                                <span>&nbsp;Students</span>
-                            </a>
-                        </li>
+                <div id="users-collapse" class="accordion-collapse collapse" aria-labelledby="flushheadingOne" data-bs-parent="#accordionFlush">
+                <div class="accordion-body mb-0 ">
+                        <a href="./../students/" class=" nav-link flex-row d-flex  "style="">
+                            <span class="d-flex flex-row pe-2"> <i class="bi bi-book-half"></i>&nbsp;<span>Students</span></span>
+                        </a>
+                        <a href="./../teachers/" class=" nav-link flex-row d-flex  "style="">
+                            <span class="d-flex flex-row pe-2"> <i class="bi bi-pen-fill"></i>&nbsp;<span>Teachers</span></span>
+                        </a>
 
-                        <li>
-                            <a href="../teachers" class="nav nav-link " id="tech" style="margin-left:-18px;">
-                                <i class="bi bi-people-fill" ></i>
-                                <span>&nbsp;Teachers</span>
-                            </a>
-                        </li>
+                        <a href="./" class=" nav-link flex-row d-flex active "style="">
+                            <span class="d-flex flex-row pe-2"> <i class="bi bi-person-check-fill"></i>&nbsp;<span>Instructors</span></span>
+                        </a>
 
-                        <li>
-                            <a href="#" class="nav nav-link active" id="tech" style="margin-left:-18px;">
-                                <i class="bi bi-person-plus-fill" ></i>
-                                <span>&nbsp;Instructors</span>
-                            </a>
-                        </li>
-                        </li>
-                    </ul>
 
                     </div>
                 </div>
             </a>
 
         </div>
-        <a href="#" class="nav nav-link">
-            <i class="bi bi-house-door-fill"></i><span>  &nbsp; Department</span>
-        </a>
-       
+        
+        <div class="accordion accordion-flush" id="accordionFlush nav nav-link">
+            <a class="accordion-item">
+                <a class="accordion-header " id="accordion-headingOne">
+                    <a href="" class="nav nav-link  collapsed " data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false">
+                         <i class="bi-house-door-fill"></i>
+                       <span> Department</span>
+                       <i class="bi bi-caret-down-fill" id="dropclass"></i>
+                    </a>
+                    
+                </a>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flushheadingOne" data-bs-parent="#accordionFlush">
+                    <div class="accordion-body mb-0 ">
+                        <a href="" class=" nav-link flex-row d-flex  "style="">
+                            
+                            <span class="d-flex flex-row pe-2"> <i class="bi bi-eye-fill"></i>&nbsp;<span>view</span></span>
+                        </a>
+
+                    </div>
+                </div>
+            </a>
+        </div>
+
         <a href="../../Forum" class="nav nav-link d-flex flex-row">
             <i class="bi bi-tree-fill"></i>
-            <!-- <i class="material-icons">forum</i> -->
             
             <span>  &nbsp; UI Element</span>
         </a>
@@ -156,8 +184,8 @@ include_once "../../../../assets/PHP/header.php";
     <!-- main container -->
     <div class="contain">
             
-        <div class="mt-3 mb-3 border-bottom my-12" style="overflow-y:hidden;">
-            <span class="card-title" style="padding:30px;">Users > Instructors</span>
+        <div class="mt-3 mb-3 border-bottom my-12 auto-nav" style="overflow-y:hidden;">
+            <span class="card-title" style="padding:30px;"><a href="../../" style="text-decoration:none">Admin</a> > <a href=""> Users > Instructors</a></span>
         </div>
     
         <div class="container ">
@@ -173,8 +201,8 @@ include_once "../../../../assets/PHP/header.php";
                     <div>
                         <a href=""><i class="bi bi-box-arrow-in-down downicon"></i><span class="mx-1">Download</span></a>    
                     </div>
-                    <div class="flex-row d-flex flex-end justify-content-end align-item-center mx-5 me-0" id="searchbar">
-                        <input type="text" name="" id="search" placeholder="search">
+                    <div class="flex-row d-flex flex-end justify-content-end align-item-center ms-5 me-0 " id="searchbar">
+                        <input type="text" name="" id="search" placeholder="search" class="border">
                         <i class="bi bi-search" id="search_icon"></i>
                     </div>
                 </div>
@@ -368,7 +396,7 @@ include_once "../../../../assets/PHP/header.php";
                     <div class="text-end">
                         <button class="btn btn-default text-white" style="background: #13335b">Save</button>
                     </div>
-                    <div class="pagenationfull p-2">
+                    <div class="pagenationfull p-2 d-flex justify-content-end">
                         <nav aria-label="Page navigation example">
                             <ul class="pagination">
                                     
@@ -402,12 +430,24 @@ include_once "../../../../assets/PHP/header.php";
     </div>
 </div>
 
+<footer class="container-fluid relative-bottom footer text-center">
+    <p class="text-center medium text-white alert-dismissible ">&copy;CapitalSpace2021</p>
+    <p class="text-center medium text-white alert-dismissible text-large">V 1.0</p>
+</footer>
 
+<<<<<<< HEAD
 
 
     <?php
         include_once "../../../../assets/PHP/footer.php";
     ?>
+=======
+<script src="./../../../../assets/css/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+<script src="./../../../../assets/js/region&districtTz.js"></script>
+<!-- <script src="../../assets/js/Chart.js"></script>
+<script src="../../assets/js/adminChart.js"></script> -->
+>>>>>>> 661badd4d3278bacbfd5abdb4eb8a67ce9204fab
 </body>
+</html>
 
 

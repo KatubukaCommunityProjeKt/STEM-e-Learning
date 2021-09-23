@@ -267,9 +267,7 @@ include_once "../../assets/PHP/header.php";
         </div>        
     </div>
 </div>
-
-
-        <?php
+    <?php
         include_once "../../assets/PHP/footer.php";
     ?>
 

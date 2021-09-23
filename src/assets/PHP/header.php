@@ -13,11 +13,20 @@
     <link rel="stylesheet" href="../../../assets/css/bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../../assets/css/bootstrap-5.0.2-dist/icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../../../assets/css/footer.css">
+<<<<<<< HEAD
 <!-- Admin -->
+=======
+    
+
+>>>>>>> 661badd4d3278bacbfd5abdb4eb8a67ce9204fab
     <link rel="stylesheet" href="../../../../assets/css/dashboard.css">
     <link rel="stylesheet" href="../../../../assets/css/bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../../../assets/css/bootstrap-5.0.2-dist/icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../../../../assets/css/footer.css">
+<<<<<<< HEAD
 </head>
 
 <!-- <a href="../../../../assets/css/dashboard.css">link</a> -->
+=======
+</head>
+>>>>>>> 661badd4d3278bacbfd5abdb4eb8a67ce9204fab
