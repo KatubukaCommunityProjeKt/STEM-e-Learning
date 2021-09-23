@@ -1,6 +1,6 @@
 <?php
 include_once "../../../../assets/PHP/header.php";
-?>
+?>  
 <style>
    .bd-example thead{
         background:#13335b !important;
@@ -75,11 +75,7 @@ include_once "../../../../assets/PHP/header.php";
             </div>
         </div>
     </nav>
-
-
-
     <!-- bottom nav -->
-  
     <div class="bottom-nav mx-3 container-fluid flex-row d-flex fixed navbar-expand-md navbar-light mb-3 justify-content-start align-item-center" >
 
         <div class="flex-start " id="sidenav_icon">
@@ -88,18 +84,13 @@ include_once "../../../../assets/PHP/header.php";
             </label>
         </div>
     </div>
-
-
     <!-- container with sidebar and maincontainer -->
 <div class="flex-container">
-
     <!-- sidebar start -->
     <div class="sidebar" >
-
         <a href="../../Dashboard" class="nav nav-link ">
             <i class="bi bi-speedometer2"></i><span>  &nbsp; Dashboard</span>
         </a>
-
         <div class="accordion accordion-flush" id="accordionFlush nav nav-link">
             <a class="accordion-item">
                 <a class="accordion-header " id="accordion-headingOne">
@@ -108,7 +99,7 @@ include_once "../../../../assets/PHP/header.php";
                        <span>  &nbsp; Users</span>
                        <i class="bi bi-caret-down-fill" id="dropclass"></i>
                     </a>
-                    
+
                 </a>
                 <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flushheadingOne" data-bs-parent="#accordionFlush">
                     <div class="accordion-body mb-0">     
@@ -192,15 +183,15 @@ include_once "../../../../assets/PHP/header.php";
                     <table class="table table-striped table-sm table-bordered text-capitalize ">
                         <thead>
                                 <tr>
-                                <th scope="col">No</th>
-                                <th scope="col">Name</th>
-                                <th scope="col">Department</th>
-                                <th scope="col">Exp. No</th>
-                                <th scope="col">Challange</th>
-                                <th scope="col">Project</th>
-                                <th scope="col">Action</th>
+                                    <th scope="col">No</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Department</th>
+                                    <th scope="col">Exp. No</th>
+                                    <th scope="col">Challange</th>
+                                    <th scope="col">Project</th>
+                                    <th scope="col">Action</th>
                                 </tr>
-                            </thead>
+                       </thead>
                             <tbody >
                                 <tr>
                                 <td>01</td>
@@ -410,6 +401,8 @@ include_once "../../../../assets/PHP/header.php";
         </div>        
     </div>
 </div>
+
+
 
 
     <?php

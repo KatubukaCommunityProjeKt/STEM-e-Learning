@@ -12,6 +12,7 @@
                         </address>
                         <p>Find a Store</p>
                 </div>
+
                 <div class="col-md-6 col-lg-3 text-white">
                         <h5 class="title">Customer services</h5>
                         <p class="text-white text-center">
@@ -20,6 +21,7 @@
                                 <address>FQA</address>
                         </p>
                 </div>
+
                 <div class="col-md-6 col-lg-3 text-white">
                         <h5 class="title">Information</h5>
                         <address>
@@ -50,10 +52,9 @@
         <p class="text-center medium text-white alert-dismissible ">&copy;CapitalSpace2021</p>
         <p class="text-center medium text-white alert-dismissible text-large">V 1.0</p>
    </footer>
-
   <script src="../../assets/css/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
   <script src="../../../assets/css/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
-
-  
+<!-- Admin -->
+  <script src="../../../../assets/css/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
 </boody>
 </html>
