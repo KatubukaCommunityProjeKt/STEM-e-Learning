@@ -54,6 +54,15 @@
    </footer>
   <script src="../../assets/css/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
   <script src="../../../assets/css/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+<<<<<<< HEAD
+=======
+  <script src="../../../../assets/css/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+<<<<<<< HEAD
+  <script src="../../../../assets/css/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+  
+=======
+>>>>>>> a0165789baa872791edf4cf8c5a4a55cbe11dc58
+>>>>>>> a0b73147469807a2c5c50cfcc0c70f03174b9f61
 
 <!-- Admin -->
   <script src="../../../../assets/css/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>

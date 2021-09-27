@@ -65,6 +65,12 @@ include_once "../../../../assets/PHP/header.php";
     .modal-content,.modal-content span{
         background:rgb(19, 51, 91,0.9) !important;
     }
+<<<<<<< HEAD
+    ..savebttn{
+        color: #13335b;
+        background: #f2f2f2;
+    }
+=======
     .modal-content input{
         background:rgb(19,20, 90,0.3) !important;
         color: #fff;
@@ -93,6 +99,7 @@ include_once "../../../../assets/PHP/header.php";
     }
 
 
+>>>>>>> a0165789baa872791edf4cf8c5a4a55cbe11dc58
 </style>
 <body>
     <nav class="header navbar fixed-top navbar-expand-sm navbar-light mb-3 flex-row d-flex">
@@ -122,7 +129,7 @@ include_once "../../../../assets/PHP/header.php";
 
                 <!-- user account -->
                 <span class="d-flex">
-                    <a href="" class="nav-link text-white" title="Account">
+                    <a href="./../../../users" class="nav-link text-white" title="Account">
                         <i class="bi bi-person-circle"></i> 
                         </a>
                 </span>
@@ -207,18 +214,25 @@ include_once "../../../../assets/PHP/header.php";
             </a>
 
         </div>
+<<<<<<< HEAD
+        <a href="../department" class="nav nav-link">
+            <i class="bi bi-house-door-fill"></i><span>  &nbsp; Department</span>
+        </a>
+       
+=======
 
 
+>>>>>>> a0165789baa872791edf4cf8c5a4a55cbe11dc58
         <a href="../../Forum" class="nav nav-link d-flex flex-row">
             <i class="bi bi-tree-fill"></i>
             <!-- <i class="material-icons">forum</i> -->
             
             <span>  &nbsp; UI Element</span>
         </a>
-        <a href="#" class="nav nav-link">
+        <a href="../History" class="nav nav-link">
             <i class="bi bi-clock-history"></i><span>  &nbsp; History</span>
         </a>
-        <a href="#" class="nav nav-link justify-content-lg-end align-items-center">
+        <a href="../public message" class="nav nav-link justify-content-lg-end align-items-center">
             <i class="bi bi-envelope-fill"></i><span> &nbsp; Public Message</span>
         </a>
 
@@ -239,7 +253,11 @@ include_once "../../../../assets/PHP/header.php";
       
                 <!-- add student -->
                 <div class="text-end mx-5 flex-row d-flex flex-end justify-content-end align-item-center studentAdd">
+<<<<<<< HEAD
+                    <button type="menu" class="btn btn-default" id="iconbttn"> <i class="bi bi-plus-circle-fill"></i> Add teacher</button>
+=======
                     <button type="menu" class="btn btn-default" id="iconbttn" data-bs-toggle="modal" data-bs-target="#addTeacher-btn"> <i class="bi bi-plus-circle-fill"></i> Add Teacher</button>
+>>>>>>> a0165789baa872791edf4cf8c5a4a55cbe11dc58
                 </div>
 
                 <div class="d-flex flex-row p-3">
@@ -347,7 +365,7 @@ include_once "../../../../assets/PHP/header.php";
 
 
                 <div class="table-responsive">
-                    <table class="table table-striped table-sm table-bordered text-capitalize ">
+                    <table class="table table-striped table-sm table-bordered text-capitalize table-hover">
                         <thead>
                                 <tr>
                                 <th scope="col">No</th>
@@ -577,28 +595,41 @@ include_once "../../../../assets/PHP/header.php";
                             </tbody>
                     </table>
 
+<<<<<<< HEAD
+                    <div class="text-end">
+                        <button class="btn btn-default  savebttn">Save</button>
+=======
                     <div class="d-flex align-items-end justify-content-end ">
                         <button class="btn btn-default text-white border-0" style="background: #13335b; outline:none">Save</button>
+>>>>>>> a0165789baa872791edf4cf8c5a4a55cbe11dc58
                     </div>
                     <div class="pagenationfull p-2 d-flex justify-content-end">
                         <nav aria-label="Page navigation example">
                             <ul class="pagination">
                                     
                                 <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Previous">
+                                    <a class="page-link" style="color: #13335b;" href="#" aria-label="Previous">
                                         <span aria-hidden="true">&laquo;</span>
                                         <span class="sr-only"></span>
                                     </a>
                                 </li>
 
+<<<<<<< HEAD
+                                <li class="page-item active"><a class="page-link" style="background: #f2f2f2; color: #13335b" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" style="color: #13335b;" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" style="color: #13335b;" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" style="color: #13335b;" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" style="color: #13335b;" href="#">5</a></li>
+=======
                                 <li class="page-item active"><a class="page-link" href="#">1</a></li>
                                 <li class="page-item"><a class="page-link" href="#">2</a></li>
                                 <li class="page-item"><a class="page-link" href="#">3</a></li>
                                 <li class="page-item"><a class="page-link" href="#">4</a></li>
                                 <li class="page-item"><a class="page-link" href="#">5</a></li>
+>>>>>>> a0165789baa872791edf4cf8c5a4a55cbe11dc58
 
                                 <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
+                                    <a class="page-link" style="color: #13335b;" href="#" aria-label="Next">
                                         <span aria-hidden="true">&raquo;</span>
                                         <span class="sr-only"></span>
                                     </a>
@@ -623,9 +654,8 @@ include_once "../../../../assets/PHP/header.php";
 
 <script src="./../../../../assets/css/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
 <script src="./../../../../assets/js/region&districtTz.js"></script>
-<!-- <script src="../../assets/js/Chart.js"></script>
-<script src="../../assets/js/adminChart.js"></script>
-</body> -->
+
+</body> 
 </html>
 
 

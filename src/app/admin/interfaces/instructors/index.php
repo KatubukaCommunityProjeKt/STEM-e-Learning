@@ -12,7 +12,11 @@ include_once "../../../../assets/PHP/header.php";
     .table-responsive>.table{
         color:#13335b;
     }
+<<<<<<< HEAD
+    
+=======
 
+>>>>>>> a0165789baa872791edf4cf8c5a4a55cbe11dc58
     #search{
         width: 50%;
         border: 1px solid #13335b;
@@ -41,6 +45,12 @@ include_once "../../../../assets/PHP/header.php";
     a{
         text-decoration:none
     }
+<<<<<<< HEAD
+    .savebttn{
+        color: #13335b;
+        background: #f2f2f2;
+    }
+=======
 
    .pagenationfull>nav>ul>li>a{
         text-decoration:none;
@@ -56,6 +66,42 @@ include_once "../../../../assets/PHP/header.php";
     .auto-nav>span>a{
         color:#13335b;
     }
+
+    form{
+        overflow-y: auto;
+    }
+ 
+    .modal-content,.modal-content span{
+        background:rgb(19, 51, 91,0.9) !important;
+    }
+    .modal-content input{
+        background:rgb(19,20, 90,0.3) !important;
+        color: #fff;
+        border:none;
+    }
+    
+    .modal-content select{
+        background:rgb(19,20, 90,0.3) !important;
+        color: #ccc;
+        border:none;
+    }
+    .modal-content span{
+        box-shadow: none;
+        border:none;
+        color:#ccc111;
+    }
+    .modal-content select:active{
+        color: #fff;
+        border:1px solid rgb(19,25,91,0.6);
+        box-shadow: none;
+    }
+    .modal-content input:focus{
+        color: #fff;
+        border:1px solid rgb(19,25,91,0.6);
+        box-shadow: none;
+    }
+
+>>>>>>> a0165789baa872791edf4cf8c5a4a55cbe11dc58
 </style>
 <body>
     <nav class="header navbar fixed-top navbar-expand-sm navbar-light mb-3 flex-row d-flex">
@@ -119,6 +165,33 @@ include_once "../../../../assets/PHP/header.php";
                     </a>
 
                 </a>
+<<<<<<< HEAD
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flushheadingOne" data-bs-parent="#accordionFlush">
+                    <div class="accordion-body mb-0">     
+                    <ul class="ulist" id="ulisOne">
+                        <li class="ulist">
+                            <a href="../students" class="nav nav-link flex-row d-flex"style="margin-left:-18px;">
+                                <i class="bi bi-binoculars-fill"></i>
+                                <span>&nbsp;Students</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../teachers" class="nav nav-link " id="tech" style="margin-left:-18px;">
+                                <i class="bi bi-people-fill" ></i>
+                                <span>&nbsp;Teachers</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="nav nav-link" id="tech" style="margin-left:-18px;">
+                                <i class="bi bi-person-plus-fill" ></i>
+                                <span>&nbsp;Instructors</span>
+                            </a>
+                        </li>
+                        </li>
+                    </ul>
+=======
                 <div id="users-collapse" class="accordion-collapse collapse" aria-labelledby="flushheadingOne" data-bs-parent="#accordionFlush">
                 <div class="accordion-body mb-0 ">
                         <a href="./../students/" class=" nav-link flex-row d-flex  "style="">
@@ -132,12 +205,19 @@ include_once "../../../../assets/PHP/header.php";
                             <span class="d-flex flex-row pe-2"> <i class="bi bi-person-check-fill"></i>&nbsp;<span>Instructors</span></span>
                         </a>
 
+>>>>>>> a0165789baa872791edf4cf8c5a4a55cbe11dc58
 
                     </div>
                 </div>
             </a>
 
         </div>
+<<<<<<< HEAD
+        <a href="../department" class="nav nav-link">
+            <i class="bi bi-house-door-fill"></i><span>  &nbsp; Department</span>
+        </a>
+       
+=======
         
         <div class="accordion accordion-flush" id="accordionFlush nav nav-link">
             <a class="accordion-item">
@@ -151,7 +231,7 @@ include_once "../../../../assets/PHP/header.php";
                 </a>
                 <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flushheadingOne" data-bs-parent="#accordionFlush">
                     <div class="accordion-body mb-0 ">
-                        <a href="" class=" nav-link flex-row d-flex  "style="">
+                        <a href="./../department" class=" nav-link flex-row d-flex  "style="">
                             
                             <span class="d-flex flex-row pe-2"> <i class="bi bi-eye-fill"></i>&nbsp;<span>view</span></span>
                         </a>
@@ -161,16 +241,17 @@ include_once "../../../../assets/PHP/header.php";
             </a>
         </div>
 
+>>>>>>> a0165789baa872791edf4cf8c5a4a55cbe11dc58
         <a href="../../Forum" class="nav nav-link d-flex flex-row">
             <i class="bi bi-tree-fill"></i>
             
             <span>  &nbsp; UI Element</span>
         </a>
-        <a href="#" class="nav nav-link">
+        <a href="../Histoty" class="nav nav-link">
             <i class="bi bi-clock-history"></i><span>  &nbsp; History</span>
         </a>
         <a href="#" class="nav nav-link justify-content-lg-end align-items-center">
-            <i class="bi bi-envelope-fill"></i><span> &nbsp; Public Message</span>
+            <i class="bi bi-envelope-fill"></i><span> &nbsp; Public  Message</span>
         </a>
 
     </div>
@@ -190,21 +271,119 @@ include_once "../../../../assets/PHP/header.php";
       
                 <!-- add student -->
                 <div class="text-end mx-5 flex-row d-flex flex-end justify-content-end align-item-center studentAdd">
-                    <button type="menu" class="btn btn-default" id="iconbttn"> <i class="bi bi-plus-circle-fill"></i> Add Student</button>
+<<<<<<< HEAD
+                    <button type="menu" class="btn btn-default" id="iconbttn"> <i class="bi bi-plus-circle-fill"></i> Add instructor</button>
+=======
+                    <button type="menu" class="btn btn-default" id="iconbttn" data-bs-toggle="modal" data-bs-target="#addInstructor-btn"> <i class="bi bi-plus-circle-fill"></i> Add Instructor</button>
+>>>>>>> a0165789baa872791edf4cf8c5a4a55cbe11dc58
                 </div>
 
                 <div class="d-flex flex-row p-3">
                     <div>
                         <a href=""><i class="bi bi-box-arrow-in-down downicon"></i><span class="mx-1">Download</span></a>    
                     </div>
+<<<<<<< HEAD
+                    <div class="flex-row d-flex flex-end justify-content-end ms-5" id="searchbar">
+                        <input type="text" name="" id="search" placeholder="search">
+=======
                     <div class="flex-row d-flex flex-end justify-content-end align-item-center ms-5 me-0 " id="searchbar">
                         <input type="text" name="" id="search" placeholder="search" class="border">
+>>>>>>> a0165789baa872791edf4cf8c5a4a55cbe11dc58
                         <i class="bi bi-search" id="search_icon"></i>
                     </div>
                 </div>
 
+                    <!-- modal form -->
+                <div class="modal fade " id="addInstructor-btn" tabindex="-1" aria-labelledby="studentAdds" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable ">
+                        <div class="modal-content">
+                            <div class="modal-header text-center border-bottom-0">
+                                <h5 class="modal-title text-white" style="margin:1px auto;" id="studentAdd-title">Add Instructor's Details</h5>
+                                <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                           <form action="">
+                           <div class="modal-body">
+                               <div class="input-group d-flex flex-row">
+                                    <span class="input-group-text rounded-0">
+                                        <i class="bi bi-person-circle" ></i>
+                                    </span>
+                                    <input type="text" placeholder="Full Name" class="form-control">
+                               </div>
+                        
+                               <div class="input-group d-flex flex-row justify-content-between p-2 text-white">
+                                    <label for="gender">Gender</label>
+                                    
+                                    <div class="flex-row d-flex float-start justify-content-between align-items-center">
+                                        <input type="radio" name="gender" value="Male" id="male">
+                                        <label for="male">Male</label>
+                                    </div>
+                                    <div class="flex-row d-flex  float-end" >
+                                        <input type="radio" name="gender" value="Female" id="female">
+                                        <label for="female">Female</label>
+                                    </div>
+                               </div>
+
+                                <div class="input-group d-flex flex-row py-2" title="Parent's or Guardian's phone number">
+                                    <span class="input-group-text rounded-0">
+                                        <i class="bi bi-telephone-fill"></i>
+                                    </span>    
+                                    <input class="form-control" type="tel" name="fullname" placeholder="0620000001" id="phone" /> 
+                               </div>
+                               <div class="input-group d-flex flex-row py-2" title="Parent's or Guardian's Email">
+                                    <span class="input-group-text rounded-0"><i class="bi-envelope-fill"></i></span>
+                                    <input class="form-control" type="text" name="email" placeholder="Parent's or Guardian's Email" /> 
+                               </div>
+                               <div class="input-group d-flex flex-row py-2" title="Region">
+                                    <span class="input-group-text rounded-0">
+                                        <i class="bi-geo-alt-fill"></i>
+                                    </span>
+                                    <select name="state" id="Region" size="1" class="form-styling form-select">
+                                        <option value="" class="text-white" selected="true" disabled >Select Region</option>
+                                    </select>
+                               </div>
+
+                               <div class="input-group d-flex flex-row py-2" title="District">
+                                    <span class="input-group-text rounded-0">
+                                        <i class="bi-geo-fill" ></i>
+                                    </span>
+                                    <select name="district" id="District" size="1" class="form-styling form-select">
+                                        <option value="" class="input" selected="selected" selected disabled>Select District</option>
+                                    </select>
+                               </div>
+
+                               <div class="input-group d-flex flex-row py-2">
+                                    <span class="input-group-text rounded-0">
+                                        <i class="bi-envelope-open-fill"></i>
+                                    </span> 
+                                    <input class="form-control" type="text" name="pobox" placeholder="P. O. BOX 1234 Dar es salaam" id="pobox" />
+                               </div>
+                               <div class="input-group d-flex flex-row py-2">
+                                    <span class="input-group-text rounded-0">
+                                        <i class="bi bi-lock-fill"></i>
+                                    </span>
+                                    <input class="form-control" type="text" name="password" placeholder="password" /> 
+                               </div>
+                               <div class="input-group d-flex flex-row py-2">
+                                    <span class="input-group-text rounded-0">
+                                        <i class="bi bi-lock-fill"></i>
+                                    </span>
+                                    <input class="form-control" type="text" name="Confirm password" placeholder="confirm password" /> 
+                               </div>
+
+                            </div> 
+                            
+                            <div class="modal-footer border-top-0">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-warning text-primary">Save Details</button>
+                            </div>
+                            
+                           </form>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="table-responsive">
-                    <table class="table table-striped table-sm table-bordered text-capitalize ">
+                    <table class="table table-striped table-sm table-bordered text-capitalize table-hover" >
                         <thead>
                                 <tr>
                                     <th scope="col">No</th>
@@ -217,7 +396,7 @@ include_once "../../../../assets/PHP/header.php";
                                 </tr>
                        </thead>
                             <tbody >
-                                <tr>
+                                <tr role="button">
                                 <td>01</td>
                                 <td>Vedasto Stem</td>
                                 <td>Science</td>
@@ -227,7 +406,7 @@ include_once "../../../../assets/PHP/header.php";
                                 <td></td>
                                 </tr>
 
-                                <tr>
+                                <tr role="button">
                                 <td>02</td>
                                 <td>Rachel Mussa</td>
                                 <td>Technology</td>
@@ -237,7 +416,7 @@ include_once "../../../../assets/PHP/header.php";
                                 <td></td>
                                 </tr>
 
-                                <tr>
+                                <tr role="button">
                                 <td>03</td>
                                 <td>Ombeni Ally</td>
                                 <td>Engineering</td>
@@ -247,7 +426,7 @@ include_once "../../../../assets/PHP/header.php";
                                 <td></td>
                                 </tr>
 
-                                <tr>
+                                <tr role="button">
                                 <td>04</td>
                                 <td>Asimwe Mwinyi</td>
                                 <td>Health</td>
@@ -257,7 +436,7 @@ include_once "../../../../assets/PHP/header.php";
                                 <td></td>
                                 </tr>
 
-                                <tr>
+                                <tr role="button">
                                 <td>05</td>
                                 <td>Silvio Travel</td>
                                 <td>Mathematics</td>
@@ -267,7 +446,7 @@ include_once "../../../../assets/PHP/header.php";
                                 <td></td>
                                 </tr>
 
-                                <tr>
+                                <tr role="button">
                                 <td>06</td>
                                 <td>Silvio Travel</td>
                                 <td>Arts</td>
@@ -277,7 +456,7 @@ include_once "../../../../assets/PHP/header.php";
                                 <td></td>
                                 </tr>
                                 
-                                <tr>
+                                <tr role="button">
                                 <td>04</td>
                                 <td>Asimwe Mwinyi</td>
                                 <td>Health</td>
@@ -287,7 +466,7 @@ include_once "../../../../assets/PHP/header.php";
                                 <td></td>
                                 </tr>
 
-                                <tr>
+                                <tr role="button">
                                 <td>01</td>
                                 <td>Vedasto Stem</td>
                                 <td>Science</td>
@@ -297,7 +476,7 @@ include_once "../../../../assets/PHP/header.php";
                                 <td></td>
                                 </tr>
 
-                                <tr>
+                                <tr role="button">
                                 <td>02</td>
                                 <td>Rachel Mussa</td>
                                 <td>Technology</td>
@@ -307,7 +486,7 @@ include_once "../../../../assets/PHP/header.php";
                                 <td></td>
                                 </tr>
 
-                                <tr>
+                                <tr role="button">
                                 <td>03</td>
                                 <td>Ombeni Ally</td>
                                 <td>Engineering</td>
@@ -317,7 +496,7 @@ include_once "../../../../assets/PHP/header.php";
                                 <td></td>
                                 </tr>
 
-                                <tr>
+                                <tr role="button">
                                 <td>04</td>
                                 <td>Asimwe Mwinyi</td>
                                 <td>Health</td>
@@ -327,7 +506,7 @@ include_once "../../../../assets/PHP/header.php";
                                 <td></td>
                                 </tr>
 
-                                <tr>
+                                <tr role="button">
                                 <td>05</td>
                                 <td>Silvio Travel</td>
                                 <td>Mathematics</td>
@@ -337,7 +516,7 @@ include_once "../../../../assets/PHP/header.php";
                                 <td></td>
                                 </tr>
 
-                                <tr>
+                                <tr role="button">
                                 <td>01</td>
                                 <td>Vedasto Stem</td>
                                 <td>Science</td>
@@ -347,7 +526,7 @@ include_once "../../../../assets/PHP/header.php";
                                 <td></td>
                                 </tr>
 
-                                <tr>
+                                <tr role="button">
                                 <td>02</td>
                                 <td>Rachel Mussa</td>
                                 <td>Technology</td>
@@ -357,7 +536,7 @@ include_once "../../../../assets/PHP/header.php";
                                 <td></td>
                                 </tr>
 
-                                <tr>
+                                <tr role="button">
                                 <td>03</td>
                                 <td>Ombeni Ally</td>
                                 <td>Engineering</td>
@@ -367,7 +546,7 @@ include_once "../../../../assets/PHP/header.php";
                                 <td></td>
                                 </tr>
 
-                                <tr>
+                                <tr role="button">
                                 <td>04</td>
                                 <td>Asimwe Mwinyi</td>
                                 <td>Health</td>
@@ -377,7 +556,7 @@ include_once "../../../../assets/PHP/header.php";
                                 <td></td>
                                 </tr>
 
-                                <tr>
+                                <tr role="button">
                                 <td>05</td>
                                 <td>Silvio Travel</td>
                                 <td>Mathematics</td>
@@ -390,27 +569,31 @@ include_once "../../../../assets/PHP/header.php";
                     </table>
 
                     <div class="text-end">
-                        <button class="btn btn-default text-white" style="background: #13335b">Save</button>
+                        <button class="btn btn-default savebttn" >Save</button>
                     </div>
+<<<<<<< HEAD
+                    <div class="p-2 justify-content-end text-end">
+=======
                     <div class="pagenationfull p-2 d-flex justify-content-end">
+>>>>>>> a0165789baa872791edf4cf8c5a4a55cbe11dc58
                         <nav aria-label="Page navigation example">
                             <ul class="pagination">
                                     
                                 <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Previous">
+                                    <a class="page-link" style="color: #13335b;" href="#" aria-label="Previous">
                                         <span aria-hidden="true">&laquo;</span>
                                         <span class="sr-only"></span>
                                     </a>
                                 </li>
 
-                                <li class="page-item active"><a class="page-link" style="background: #13335b" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                <li class="page-item active"><a class="page-link" style="background: #f2f2f2; color: #13335b" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" style="color: #13335b;" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" style="color: #13335b;" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" style="color: #13335b;" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" style="color: #13335b;" href="#">5</a></li>
 
                                 <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
+                                    <a class="page-link" style="color: #13335b;" href="#" aria-label="Next">
                                         <span aria-hidden="true">&raquo;</span>
                                         <span class="sr-only"></span>
                                     </a>
@@ -438,8 +621,6 @@ include_once "../../../../assets/PHP/header.php";
     ?>
 <script src="./../../../../assets/css/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
 <script src="./../../../../assets/js/region&districtTz.js"></script>
-<!-- <script src="../../assets/js/Chart.js"></script>
-<script src="../../assets/js/adminChart.js"></script> -->
 </body>
 </html>
 
