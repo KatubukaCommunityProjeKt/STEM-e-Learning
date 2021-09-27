@@ -122,7 +122,7 @@ include_once "../../../../assets/PHP/header.php";
 
                 <!-- user account -->
                 <span class="d-flex">
-                    <a href="" class="nav-link text-white" title="Account">
+                    <a href="./../../../users" class="nav-link text-white" title="Account">
                         <i class="bi bi-person-circle"></i> 
                         </a>
                 </span>
@@ -347,7 +347,7 @@ include_once "../../../../assets/PHP/header.php";
 
 
                 <div class="table-responsive">
-                    <table class="table table-striped table-sm table-bordered text-capitalize ">
+                    <table class="table table-striped table-sm table-bordered text-capitalize table-hover">
                         <thead>
                                 <tr>
                                 <th scope="col">No</th>
@@ -623,9 +623,8 @@ include_once "../../../../assets/PHP/header.php";
 
 <script src="./../../../../assets/css/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
 <script src="./../../../../assets/js/region&districtTz.js"></script>
-<!-- <script src="../../assets/js/Chart.js"></script>
-<script src="../../assets/js/adminChart.js"></script>
-</body> -->
+
+</body> 
 </html>
 
 

@@ -119,7 +119,7 @@ include_once "../../../../assets/PHP/header.php";
 
                 <!-- user account -->
                 <span class="d-flex">
-                    <a href="" class="nav-link text-white" title="Account">
+                    <a href="./../../../users" class="nav-link text-white" title="Account">
                         <i class="bi bi-person-circle"></i> 
                         </a>
                 </span>

@@ -44,7 +44,7 @@ include_once "../../../assets/PHP/header.php";
 
                 <!-- user account -->
                 <span class="d-flex">
-                    <a href="" class="nav-link text-white" title="Account">
+                    <a href="./../../users" class="nav-link text-white" title="Account">
                         <i class="bi bi-person-circle"></i> 
                         </a>
                 </span>
@@ -120,7 +120,7 @@ include_once "../../../assets/PHP/header.php";
         <a href="#" class="nav nav-link">
             <i class="bi bi-collection-fill"></i><span>  &nbsp; Library</span>
         </a>
-        <a href="#" class="nav nav-link justify-content-lg-end align-items-center">
+        <a href="./../../users" class="nav nav-link justify-content-lg-end align-items-center">
             <i class="bi bi-person-circle"></i><span> &nbsp; Account</span>
         </a>
 
