@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../assets/css/dashboard.css">
+    <link rel="stylesheet" href="../../../../assets/css/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/bootstrap-5.0.2-dist/icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../../../assets/css/footer.css">
+</head>
+
+<style>
+   .bd-example thead{
+        background:#13335b !important;
+        opacity:0.8;
+    }
+    .table-responsive>.table{
+        color:#13335b;
+    }
+    #search{
+        width: 50%;
+        border: 1px solid #13335b;
+        justify-content: end;
+        align-items: center;
+    }
+    .auto-nav>span>a{
+        color:#13335b;
+    }
+     
+    a{
+        text-decoration:none
+    } 
+    .form-group>textarea{
+        resize: none;
+    }
+    .form-group>.input-group>select:focus,.form-group>.input-group>input:focus,.form-group>textarea:focus{
+        outline: none !important;
+        box-shadow: none;
+    }
+    .button>.mybtn{
+        width: 150px;
+        background: #13335b;
+        outline: none;
+        box-shadow: none;
+        font-size: 24px;
+    }
+    .panel{
+        height: 69.7vh;
+    }
+
+</style>
+<body>
+    <nav class="header navbar fixed-top navbar-expand-sm navbar-light mb-3 flex-row d-flex ">
+        <div class="container-fluid head" >
+            <a href="../../../"  class="nav-brand text-warning" style="margin-left: 49px;">
+                <h3>STEM E-Learning</h3>
+            </a>
+            <span class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-white "></span>
+            </span>
+
+                <div class="collapse navbar-collapse " id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0 ">
+                    <li class="nav-item ">
+                        <a class="nav-link active text-white" aria-current="page" href="../../../">
+                        <i class="bi bi-house-fill"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">
+                            <i class="bi bi-grid-fill"></i> more
+                        </a>
+                    </li>
+
+                </ul>
+
+                <!-- user account -->
+                <span class="d-flex">
+                    <a href="" class="nav-link text-white" title="Account">
+                        <i class="bi bi-person-circle"></i> 
+                        </a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- bottom nav -->
+  
+    <div class="bottom-nav container-fluid flex-row d-flex fixed navbar-expand-md navbar-light mb-3 justify-content-start align-item-center" >
+
+        <div class="flex-start d-flex " id="sidenav_icon">
+            <label for="check">
+                <i class="bi bi-list" id="sidebar-btn"></i>
+            </label>
+        </div>
+    </div>
+
+
+    <!-- container with sidebar and maincontainer -->
+<div class="flex-container">
+
+    <!-- sidebar start -->
+    <div class="sidebar" >
+
+        <a href="./../../" class="nav nav-link">
+            <i class="bi bi-speedometer2"></i><span>  &nbsp; Dashboard</span>
+        </a>
+        <div class="accordion accordion-flush" id="accordionFlush nav nav-link">
+            <a class="accordion-item">
+                <a class="accordion-header " id="accordion-headingOne">
+                    <a href="" class="nav nav-link  collapsed " data-bs-toggle="collapse" data-bs-target="#users-collapse" aria-expanded="false">
+                         <i class="bi-people-fill"></i>
+                       <span> Users</span>
+                       <i class="bi bi-caret-down-fill" id="dropclass"></i>
+                    </a>
+                    
+                </a>
+                <div id="users-collapse" class="accordion-collapse collapse" aria-labelledby="flushheadingOne" data-bs-parent="#accordionFlush">
+                    <div class="accordion-body mb-0 ">
+                        <a href="./../students/" class=" nav-link flex-row d-flex  "style="">
+                            <span class="d-flex flex-row pe-2"> <i class="bi bi-book-half"></i>&nbsp;<span>Students</span></span>
+                        </a>
+                        <a href="./../teachers/" class=" nav-link flex-row d-flex  "style="">
+                            <span class="d-flex flex-row pe-2"> <i class="bi bi-pen-fill"></i>&nbsp;<span>Teachers</span></span>
+                        </a>
+
+                        <a href="./..//instructors/" class=" nav-link flex-row d-flex  "style="">
+                            <span class="d-flex flex-row pe-2"> <i class="bi bi-person-check-fill"></i>&nbsp;<span>Instructors</span></span>
+                        </a>
+
+
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="accordion accordion-flush" id="accordionFlush nav nav-link">
+            <a class="accordion-item">
+                <a class="accordion-header " id="accordion-headingOne">
+                    <a href="" class="nav nav-link  collapsed " data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false">
+                         <i class="bi-house-door-fill"></i>
+                       <span> Department</span>
+                       <i class="bi bi-caret-down-fill" id="dropclass"></i>
+                    </a>
+                    
+                </a>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flushheadingOne" data-bs-parent="#accordionFlush">
+                    <div class="accordion-body mb-0 ">
+                        <a href="" class=" nav-link flex-row d-flex  "style="">
+                            
+                            <span class="d-flex flex-row pe-2"> <i class="bi bi-eye-fill"></i>&nbsp;<span>view</span></span>
+                        </a>
+
+                    </div>
+                </div>
+            </a>
+
+        </div>
+        <a href="" class="nav nav-link">
+            <i class="bi bi-tree-fill"></i><span>  &nbsp; UI Element</span>
+        </a>
+       
+        <a href="" class="nav nav-link d-flex flex-row">
+            <i class="bi bi-clock-history"></i>            
+            <span>  &nbsp; History</span>
+        </a>
+        <a href="./" class="nav nav-link active">
+            <span class="d-flex flex-row"><i class="bi bi-envelope-fill"></i><span> Public Message</span></span>
+        </a>
+
+    </div>
+
+    <!-- sidebar end -->
+
+    <!-- main container -->
+    <div class="contain">
+            
+        <div class="mt-2 mb-3 border-bottom my-12 auto-nav " style="overflow-y:hidden;">
+            <span class="card-title" style="padding:30px;"> <a href="./../../">Admin</a> > <a href="./">Public Message</a></span>
+        </div>
+    
+        <div class="container ">
+                
+            <div class="row my-4">
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-body message">
+                            <form action="" class="card border-0 ">
+                                <div class="form-group">
+                                   <div class="input-group">
+                                        <span class="input-group-text rounded-0">To :</span>
+                                        <select name="users" id="" class="form-select border-bottom-0 rounded-0">
+                                            <option value="" disabled selected >Choose respondent</option>
+                                            <option value="all" class="form-control">All (Students, Teachers & Instructors)</option>
+                                            <option value="student" class="form-control">Students</option>
+                                            <option value="teacher" class="form-control">Teachers</option>
+                                            <option value="instructor" class="form-control">Instructors</option>
+                                        </select>
+                                   </div>
+                                   <div class="input-group">
+                                       <span class="input-group-text rounded-0">Title : </span>
+                                       <input type="text" class="form-control rounded-0 border-bottom-0" name="" placeholder="Conditions for system usage">
+                                    </div>
+                                    <textarea name="" class="form-control rounded-0 h-100" cols="100" rows="10" placeholder="Text Message" ></textarea>
+
+                                </div>
+                               <div class="d-flex justify-content-end py-3 button">
+                                <button type="submit" class="btn btn-default  py-2 d-flex justify-content-center text-center text-white mybtn">Send &nbsp;<i class="bi bi-cursor-fill text-white"></i></button>
+                               </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>   
+       
+        
+    </div>
+
+
+</div>
+<footer class="container-fluid relative-bottom footer">
+    <div class="row text-center" >
+            <div class="col-md-6 col-lg-3 text-white ">
+                   
+                   <h5 class="title">Contact us</h5>
+                   <!-- </a> -->
+                    <address>
+                    +44 345 678 903
+                    </address>
+                    <address>
+                    adobexd@mail.com 
+                    </address>
+                    <p>Find a Store</p>
+            </div>
+            <div class="col-md-6 col-lg-3 text-white">
+                    <h5 class="title">Customer services</h5>
+                    <p class="text-white text-center">
+                            <address> Contact us</address>
+                            <address>Returns</address>
+                            <address>FQA</address>
+                    </p>
+            </div>
+            <div class="col-md-6 col-lg-3 text-white">
+                    <h5 class="title">Information</h5>
+                    <address>
+                    Work with us
+                    </address>
+                    <address>
+                    privacy &amp policy
+                    </address>
+                    <address>
+                    Terms &amp Conditions
+                    </address>
+            </div>
+            <div class="col-md-6 col-lg-3 text-white">
+                    <h5 class="title">Contact Administrator</h5>
+                    <p class="container">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                    <p>
+                            <form class="flex-inline d-flex">
+                                    <span class="form-group" id="subscribe"> 
+                                            <input type="email" class="form-control" placeholder="example@abc.com">
+                                    </span>
+                                    &nbsp;
+                                    <button class="btn text-info bg-white" type="submit">Subscribe</button>
+                            </form>
+                            
+                    </p>
+            </div>   
+    </div>
+    <p class="text-center medium text-white alert-dismissible ">&copy;CapitalSpace2021</p>
+    <p class="text-center medium text-white alert-dismissible text-large">V 1.0</p>
+</footer>
+
+<script src="../../../../assets/css/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+
+
+</boody>
+</html>
+
