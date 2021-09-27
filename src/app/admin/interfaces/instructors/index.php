@@ -12,9 +12,7 @@ include_once "../../../../assets/PHP/header.php";
     .table-responsive>.table{
         color:#13335b;
     }
-    #searchbar{
-        margin-left: 90px !important;
-    }
+    
     #search{
         width: 50%;
         border: 1px solid #13335b;
@@ -38,6 +36,10 @@ include_once "../../../../assets/PHP/header.php";
     }
     .pagenationfull{
         margin-left: 953px;
+    }
+    .savebttn{
+        color: #13335b;
+        background: #f2f2f2;
     }
 </style>
 <body>
@@ -128,7 +130,7 @@ include_once "../../../../assets/PHP/header.php";
                         </li>
 
                         <li>
-                            <a href="#" class="nav nav-link active" id="tech" style="margin-left:-18px;">
+                            <a href="#" class="nav nav-link" id="tech" style="margin-left:-18px;">
                                 <i class="bi bi-person-plus-fill" ></i>
                                 <span>&nbsp;Instructors</span>
                             </a>
@@ -141,7 +143,7 @@ include_once "../../../../assets/PHP/header.php";
             </a>
 
         </div>
-        <a href="#" class="nav nav-link">
+        <a href="../department" class="nav nav-link">
             <i class="bi bi-house-door-fill"></i><span>  &nbsp; Department</span>
         </a>
        
@@ -151,11 +153,11 @@ include_once "../../../../assets/PHP/header.php";
             
             <span>  &nbsp; UI Element</span>
         </a>
-        <a href="#" class="nav nav-link">
+        <a href="../Histoty" class="nav nav-link">
             <i class="bi bi-clock-history"></i><span>  &nbsp; History</span>
         </a>
         <a href="#" class="nav nav-link justify-content-lg-end align-items-center">
-            <i class="bi bi-envelope-fill"></i><span> &nbsp; Public Message</span>
+            <i class="bi bi-envelope-fill"></i><span> &nbsp; Public  Message</span>
         </a>
 
     </div>
@@ -175,14 +177,14 @@ include_once "../../../../assets/PHP/header.php";
       
                 <!-- add student -->
                 <div class="text-end mx-5 flex-row d-flex flex-end justify-content-end align-item-center studentAdd">
-                    <button type="menu" class="btn btn-default" id="iconbttn"> <i class="bi bi-plus-circle-fill"></i> Add Student</button>
+                    <button type="menu" class="btn btn-default" id="iconbttn"> <i class="bi bi-plus-circle-fill"></i> Add instructor</button>
                 </div>
 
                 <div class="d-flex flex-row p-3">
                     <div>
                         <a href=""><i class="bi bi-box-arrow-in-down downicon"></i><span class="mx-1">Download</span></a>    
                     </div>
-                    <div class="flex-row d-flex flex-end justify-content-end align-item-center mx-5 me-0" id="searchbar">
+                    <div class="flex-row d-flex flex-end justify-content-end ms-5" id="searchbar">
                         <input type="text" name="" id="search" placeholder="search">
                         <i class="bi bi-search" id="search_icon"></i>
                     </div>
@@ -375,27 +377,27 @@ include_once "../../../../assets/PHP/header.php";
                     </table>
 
                     <div class="text-end">
-                        <button class="btn btn-default text-white" style="background: #13335b">Save</button>
+                        <button class="btn btn-default savebttn" >Save</button>
                     </div>
-                    <div class="pagenationfull p-2">
+                    <div class="p-2 justify-content-end text-end">
                         <nav aria-label="Page navigation example">
                             <ul class="pagination">
                                     
                                 <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Previous">
+                                    <a class="page-link" style="color: #13335b;" href="#" aria-label="Previous">
                                         <span aria-hidden="true">&laquo;</span>
                                         <span class="sr-only"></span>
                                     </a>
                                 </li>
 
-                                <li class="page-item active"><a class="page-link" style="background: #13335b" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                <li class="page-item active"><a class="page-link" style="background: #f2f2f2; color: #13335b" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" style="color: #13335b;" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" style="color: #13335b;" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" style="color: #13335b;" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" style="color: #13335b;" href="#">5</a></li>
 
                                 <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
+                                    <a class="page-link" style="color: #13335b;" href="#" aria-label="Next">
                                         <span aria-hidden="true">&raquo;</span>
                                         <span class="sr-only"></span>
                                     </a>
