@@ -105,12 +105,8 @@ include_once "../../../../assets/PHP/header.php";
 <div class="flex-container">
     <!-- sidebar start -->
     <div class="sidebar" >
-<<<<<<< HEAD
         <a href="../../Dashboard" class="nav nav-link ">
-=======
-
         <a href="../../" class="nav nav-link ">
->>>>>>> 661badd4d3278bacbfd5abdb4eb8a67ce9204fab
             <i class="bi bi-speedometer2"></i><span>  &nbsp; Dashboard</span>
         </a>
         <div class="accordion accordion-flush" id="accordionFlush nav nav-link">
@@ -435,18 +431,15 @@ include_once "../../../../assets/PHP/header.php";
     <p class="text-center medium text-white alert-dismissible text-large">V 1.0</p>
 </footer>
 
-<<<<<<< HEAD
 
 
     <?php
         include_once "../../../../assets/PHP/footer.php";
     ?>
-=======
 <script src="./../../../../assets/css/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
 <script src="./../../../../assets/js/region&districtTz.js"></script>
 <!-- <script src="../../assets/js/Chart.js"></script>
 <script src="../../assets/js/adminChart.js"></script> -->
->>>>>>> 661badd4d3278bacbfd5abdb4eb8a67ce9204fab
 </body>
 </html>
 
