@@ -54,8 +54,11 @@
   <script src="../../assets/css/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
   <script src="../../../assets/css/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
   <script src="../../../../assets/css/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+<<<<<<< HEAD
   <script src="../../../../assets/css/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
   
+=======
+>>>>>>> a0165789baa872791edf4cf8c5a4a55cbe11dc58
 
   
 </boody>
