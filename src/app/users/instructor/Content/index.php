@@ -122,7 +122,7 @@ include_once "../../../../assets/PHP/header.php";
     <div class="contain">
             
         <div class="mt-3 mb-3 border-bottom my-12" style="overflow-y:hidden;">
-            <span class="card-title" style="padding:30px;">instructor > Content</span>
+            <span class="card-title" style="padding:30px;">Content</span>
         </div>
     
         <div class="container ">
